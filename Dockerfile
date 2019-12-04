@@ -19,7 +19,7 @@ WORKDIR $APP_ROOT
 ADD Gemfile $APP_ROOT
 ADD Gemfile.lock $APP_ROOT
 
-# バージョンのエラーが出る為一応2.0.2を導入
+# バージョンのエラーが出る為一応2.0.2を導入 
 RUN \
     gem install bundler:2.0.2 && \
     bundle install && \
